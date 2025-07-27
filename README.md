@@ -2,6 +2,8 @@
 
 [English](#english) | [Українська](#українська)
 
+### To review the project please use Vercel link: https://spa-page-react-router.vercel.app/
+
 ---
 
 ## English

@@ -8,19 +8,3 @@ const App = () => {
 }
 
 export default App
-
-
-// const App = () => {
-//   return (
-// <BrowserRouter> <-- варіант вкладеної маршрутизаціЇ через BrowserRouter з Routes та Route
-//   <Menu />           імпортуємо BrowserRouter,Routes,Route
-//   <Routes>
-//     <Route path="/" element={<Home />} />
-//     <Route path="/about" element={<About />} />
-//     <Route path="/contact" element={<Contact />} />
-//     <Route path="*" element={<NotFound />} />
-//   </Routes>
-//   <FooterLinks />
-// </BrowserRouter>
-// )
-// }

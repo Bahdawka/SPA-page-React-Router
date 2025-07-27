@@ -92,3 +92,10 @@ main {
   min-height: calc(100vh - 160px);
   padding: 2rem;
 }
+
+.notfound__container {
+  display: flex;
+  height: 100vh;
+  flex-direction: column;
+  justify-content: center
+}

@@ -3,33 +3,29 @@ import Home from './components/Home'
 import About from './components/About'
 import Contact from './components/Contact'
 import NotFound from './components/NotFound'
-import Menu from './components/Menu'
-import FooterLinks from './components/FooterLinks'
-import type { ReactElement } from 'react'
-
-const withLayout = (Component: () => ReactElement) => (
-  <>
-    <Menu />
-    <Component />
-    <FooterLinks />
-  </>
-)
+import Layout from './components/Layout'
 
 const router = createBrowserRouter([{
-  path: "/",
-  element: withLayout(Home)
+  path: '/',
+  element: <Layout />,
+  children: [
+    {
+      path: '',
+      element: <Home />
+    },
+    {
+      path: 'about',
+      element: <About />
+    },
+    {
+      path: 'contact',
+      element: <Contact />
+    }
+  ]
 },
 {
-  path: "/about",
-  element: withLayout(About)
-},
-{
-  path: "/contact",
-  element: withLayout(Contact)
-},
-{
-  path: "*",
-  element: withLayout(NotFound)
+  path: '*',
+  element: <NotFound />
 }
 ])
 
